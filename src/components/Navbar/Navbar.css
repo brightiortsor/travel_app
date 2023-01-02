@@ -14,9 +14,91 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--whiteColor);
+  padding: 1rem;
+  background-color: transparent;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
+  width: 100%;
   z-index: 100;
-} /*# sourceMappingURL=Navbar.css.map */
+}
+.navSection .header .logoDiv .logo {
+  font-weight: 500;
+  color: var(--primaryColor);
+  align-items: center;
+  justify-content: center;
+}
+.navSection .header .logoDiv .logo .icon {
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  .navSection .header .navBar {
+    background: var(--grayBg);
+    position: absolute;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: -500%;
+    box-shadow: 0 2px 4px rgba(200, 209, 200, 0.9);
+    z-index: 100;
+    transition: 0.5 ease;
+  }
+  .navSection .header .navBar .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .navSection .header .navBar .navList .navItem {
+    padding: 0.5rem 0;
+  }
+  .navSection .header .navBar .navList .navItem .navLink {
+    color: var(--textColor);
+    font-weight: 600;
+  }
+  .navSection .header .navBar .navList .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .navSection .header .navBar .navList .headerBtns {
+    gap: 0.6rem;
+  }
+  .navSection .header .navBar .navList .headerBtns .btn {
+    margin: 1rem 0.5rem 0;
+    color: var(--whiteColor);
+  }
+  .navSection .header .navBar .navList .headerBtns .btn a {
+    font-weight: 600;
+  }
+  .navSection .header .navBar .navList .headerBtns .btn a:hover {
+    color: var(--whiteColor);
+  }
+  .navSection .header .navBar .navList .headerBtns .login-btn {
+    background-color: transparent;
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+  }
+  .navSection .header .navBar .navList .headerBtns .login-btn:hover {
+    background-color: var(--hoverColor);
+    color: var(--whiteColor);
+  }
+  .navSection .header .navBar .closeNav {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .navSection .header .navBar .closeNav:hover {
+    color: var(--hoverColor);
+  }
+  .navSection .header .activeNav {
+    left: 0;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

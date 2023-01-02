@@ -1,11 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { SiYourtraveldottv } from "react-icons/si";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { CgMenuGridR } from "react-icons/cg";
 
 const Navbar = () => {
+  const [active, setActive] = useState("navBar");
+  const showNav = () => {
+    setActive("navBar activeNav");
+  };
+
+  const closeNav = () => {
+    setActive("navBar");
+  };
   return (
     <section className="navSection">
       <div className="header">
@@ -13,12 +21,12 @@ const Navbar = () => {
           <a href="#" className="logo">
             <h1 className="flex">
               <SiYourtraveldottv className="icon" />
-              Spot.
+              PointX
             </h1>
           </a>
         </div>
 
-        <div className="navBar">
+        <div className={active}>
           <ul className="navList flex">
             <li className="navItem">
               <a href="#" className="navLink">
@@ -27,44 +35,41 @@ const Navbar = () => {
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
+              <a href="#products" className="navLink">
                 Products
               </a>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
+              <a href="#resources" className="navLink">
                 Resources
               </a>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
+              <a href="#contact" className="navLink">
                 Contact
               </a>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
+              <a href="#blog" className="navLink">
                 Blog
               </a>
             </li>
 
-            <div className="headerBtn">
+            <div className="headerBtns flex">
               <button className="btn login-btn">Login</button>
-            </div>
-
-            <div className="headerBtn">
               <button className="btn signup-btn">Sign Up</button>
             </div>
           </ul>
 
-          <div className="closeNav">
+          <div onClick={closeNav} className="closeNav">
             <AiFillCloseCircle className="icon" />
           </div>
         </div>
 
-        <div className="toggleNav">
+        <div onClick={showNav} className="toggleNav">
           <CgMenuGridR className="icon" />
         </div>
       </div>

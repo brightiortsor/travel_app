@@ -11,18 +11,16 @@
 }
 
 .navSection {
-    background: #000;
-
     .header {
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // padding: 1rem;
-        // background-color: transparent;
-        // box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-        // position: fixed;
-        // width: 100%;
-        // z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: transparent;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 100;
 
         .logoDiv {
             .logo {
@@ -33,10 +31,101 @@
 
                 .icon {
                     font-size: 1.5rem;
-                    margin-right: 0.5rem;
+                    margin-right: 0.2rem;
                 }
             }
         }
+
+        @media screen and (max-width: 768px) {
+            .navBar {
+                background: var(--grayBg);
+                position: absolute;
+                height: max-content;
+                padding: 1rem;
+                width: 100%;
+                top: 0;
+                left: -500%;
+                box-shadow: 0 2px 4px rgba(200, 209, 200, 0.9);
+                z-index: 100;
+                transition: .5 ease;
+
+                .navList {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+
+                    .navItem {
+                        padding: .5rem 0;
+
+                        .navLink {
+                            color: var(--textColor);
+                            font-weight: 600;
+
+                            &:hover {
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+
+                    .headerBtns {
+                        gap: .6rem;
+
+                        .btn {
+                            margin: 1rem 0.5rem 0;
+                            color: var(--whiteColor);
+
+                            a {
+                                font-weight: 600;
+
+                                &:hover {
+                                    color: var(--whiteColor);
+                                }
+                            }
+                        }
+
+                        .login-btn {
+                            background-color: transparent;
+                            border: 1px solid var(--primaryColor);
+                            color: var(--primaryColor);
+
+                            &:hover {
+                                background-color: var(--hoverColor);
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+
+                .closeNav {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    font-size: 1.5rem;
+                    color: var(--primaryColor);
+                    cursor: pointer;
+                    transition: .3s ease;
+
+                    &:hover {
+                        color: var(--hoverColor);
+                    }
+                }
+            }
+
+            .activeNav {
+                left: 0;
+            }
+        }
+
+        // @media screen and (min-width:769px) and (max-width: 1200px) {
+
+        //     .closeNav,
+        //     .toggleNav {
+        //         display: none;
+        //     }
+        // }
 
     }
 }
