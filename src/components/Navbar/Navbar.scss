@@ -1,0 +1,42 @@
+:root {
+    --primaryColor: hsl(26, 93%, 50%);
+    --hoverColor: hsl(26, 90%, 40%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 0%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDim: hsl(0, 0%, 93%);
+    --grayBg: hsl(0, 0%, 96%);
+    --grayText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+}
+
+.navSection {
+    background: #000;
+
+    .header {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // padding: 1rem;
+        // background-color: transparent;
+        // box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        // position: fixed;
+        // width: 100%;
+        // z-index: 100;
+
+        .logoDiv {
+            .logo {
+                font-weight: 500;
+                color: var(--primaryColor);
+                align-items: center;
+                justify-content: center;
+
+                .icon {
+                    font-size: 1.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+    }
+}
