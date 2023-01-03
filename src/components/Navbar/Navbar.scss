@@ -25,107 +25,181 @@
         .logoDiv {
             .logo {
                 font-weight: 500;
-                color: var(--primaryColor);
+                color: var(--whiteColor);
                 align-items: center;
                 justify-content: center;
 
                 .icon {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     margin-right: 0.2rem;
+                    color: var(--primaryColor);
                 }
             }
         }
 
-        @media screen and (max-width: 768px) {
-            .navBar {
-                background: var(--grayBg);
-                position: absolute;
-                height: max-content;
-                padding: 1rem;
+        .navBar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            .navList {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+                .navItem {
+                    .navLink {
+                        color: var(--textColor);
+                        font-weight: 600;
+
+                        &:hover {
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+
+            .headerBtns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+                .btn {
+                    margin: 0.5rem 0.5rem 0;
+                    color: var(--whiteColor);
+
+                    a {
+                        font-weight: 600;
+
+                        &:hover {
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+
+                .login-btn {
+                    background-color: transparent;
+                    border: 1px solid var(--primaryColor);
+                    color: var(--primaryColor);
+
+                    &:hover {
+                        background-color: var(--hoverColor);
+                        color: var(--whiteColor);
+                    }
+                }
+
+                .signup-btn {
+                    background-color: var(--primaryColor);
+                    border: 1px solid var(--primaryColor);
+                    color: var(--whiteColor);
+
+                    &:hover {
+                        background-color: var(--hoverColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .navBar {
+            background: var(--grayBg);
+            position: absolute;
+            height: max-content;
+            padding: 1rem;
+            width: 100%;
+            top: 0;
+            left: -500%;
+            box-shadow: 0 2px 4px rgba(200, 209, 200, 0.9);
+            z-index: 100;
+            transition: .5 ease;
+
+            .navList {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
-                top: 0;
-                left: -500%;
-                box-shadow: 0 2px 4px rgba(200, 209, 200, 0.9);
-                z-index: 100;
-                transition: .5 ease;
+                margin: auto;
 
-                .navList {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    margin: auto;
+                .navItem {
+                    padding: .5rem 0;
 
-                    .navItem {
-                        padding: .5rem 0;
+                    .navLink {
+                        color: var(--textColor);
+                        font-weight: 600;
 
-                        .navLink {
-                            color: var(--textColor);
+                        &:hover {
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+
+                .headerBtns {
+                    gap: .6rem;
+
+                    .btn {
+                        margin: 1rem 0.5rem 0;
+                        color: var(--whiteColor);
+
+                        a {
                             font-weight: 600;
 
                             &:hover {
-                                color: var(--primaryColor);
-                            }
-                        }
-                    }
-
-                    .headerBtns {
-                        gap: .6rem;
-
-                        .btn {
-                            margin: 1rem 0.5rem 0;
-                            color: var(--whiteColor);
-
-                            a {
-                                font-weight: 600;
-
-                                &:hover {
-                                    color: var(--whiteColor);
-                                }
-                            }
-                        }
-
-                        .login-btn {
-                            background-color: transparent;
-                            border: 1px solid var(--primaryColor);
-                            color: var(--primaryColor);
-
-                            &:hover {
-                                background-color: var(--hoverColor);
                                 color: var(--whiteColor);
                             }
                         }
                     }
-                }
 
-                .closeNav {
-                    position: absolute;
-                    top: 1rem;
-                    right: 1rem;
-                    font-size: 1.5rem;
-                    color: var(--primaryColor);
-                    cursor: pointer;
-                    transition: .3s ease;
+                    .login-btn {
+                        background-color: transparent;
+                        border: 1px solid var(--primaryColor);
+                        color: var(--primaryColor);
 
-                    &:hover {
-                        color: var(--hoverColor);
+                        &:hover {
+                            background-color: var(--hoverColor);
+                            color: var(--whiteColor);
+                        }
                     }
                 }
             }
 
-            .activeNav {
-                left: 0;
+            .closeNav {
+
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                font-size: 1.5rem;
+                color: var(--primaryColor);
+                cursor: pointer;
+                transition: .3s ease;
+
+                &:hover {
+                    color: var(--hoverColor);
+                }
             }
         }
 
-        // @media screen and (min-width:769px) and (max-width: 1200px) {
-
-        //     .closeNav,
-        //     .toggleNav {
-        //         display: none;
-        //     }
-        // }
-
+        .activeNav {
+            left: 0;
+        }
     }
+
+
+    .toggleNav {
+        font-size: 1.5rem;
+        color: var(--whiteColor);
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: var(--primaryColor);
+        }
+    }
+
+
 }

@@ -23,16 +23,70 @@
 }
 .navSection .header .logoDiv .logo {
   font-weight: 500;
-  color: var(--primaryColor);
+  color: var(--whiteColor);
   align-items: center;
   justify-content: center;
 }
 .navSection .header .logoDiv .logo .icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 0.2rem;
+  color: var(--primaryColor);
+}
+.navSection .header .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navSection .header .navBar .navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navSection .header .navBar .navList .navItem .navLink {
+  color: var(--textColor);
+  font-weight: 600;
+}
+.navSection .header .navBar .navList .navItem .navLink:hover {
+  color: var(--primaryColor);
+}
+.navSection .header .navBar .headerBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navSection .header .navBar .headerBtns .btn {
+  margin: 0.5rem 0.5rem 0;
+  color: var(--whiteColor);
+}
+.navSection .header .navBar .headerBtns .btn a {
+  font-weight: 600;
+}
+.navSection .header .navBar .headerBtns .btn a:hover {
+  color: var(--whiteColor);
+}
+.navSection .header .navBar .headerBtns .login-btn {
+  background-color: transparent;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+}
+.navSection .header .navBar .headerBtns .login-btn:hover {
+  background-color: var(--hoverColor);
+  color: var(--whiteColor);
+}
+.navSection .header .navBar .headerBtns .signup-btn {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+  color: var(--whiteColor);
+}
+.navSection .header .navBar .headerBtns .signup-btn:hover {
+  background-color: var(--hoverColor);
+  color: var(--whiteColor);
 }
 @media screen and (max-width: 768px) {
-  .navSection .header .navBar {
+  .navSection .navBar {
     background: var(--grayBg);
     position: absolute;
     height: -webkit-max-content;
@@ -46,7 +100,7 @@
     z-index: 100;
     transition: 0.5 ease;
   }
-  .navSection .header .navBar .navList {
+  .navSection .navBar .navList {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,39 +108,39 @@
     width: 100%;
     margin: auto;
   }
-  .navSection .header .navBar .navList .navItem {
+  .navSection .navBar .navList .navItem {
     padding: 0.5rem 0;
   }
-  .navSection .header .navBar .navList .navItem .navLink {
+  .navSection .navBar .navList .navItem .navLink {
     color: var(--textColor);
     font-weight: 600;
   }
-  .navSection .header .navBar .navList .navItem .navLink:hover {
+  .navSection .navBar .navList .navItem .navLink:hover {
     color: var(--primaryColor);
   }
-  .navSection .header .navBar .navList .headerBtns {
+  .navSection .navBar .navList .headerBtns {
     gap: 0.6rem;
   }
-  .navSection .header .navBar .navList .headerBtns .btn {
+  .navSection .navBar .navList .headerBtns .btn {
     margin: 1rem 0.5rem 0;
     color: var(--whiteColor);
   }
-  .navSection .header .navBar .navList .headerBtns .btn a {
+  .navSection .navBar .navList .headerBtns .btn a {
     font-weight: 600;
   }
-  .navSection .header .navBar .navList .headerBtns .btn a:hover {
+  .navSection .navBar .navList .headerBtns .btn a:hover {
     color: var(--whiteColor);
   }
-  .navSection .header .navBar .navList .headerBtns .login-btn {
+  .navSection .navBar .navList .headerBtns .login-btn {
     background-color: transparent;
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
   }
-  .navSection .header .navBar .navList .headerBtns .login-btn:hover {
+  .navSection .navBar .navList .headerBtns .login-btn:hover {
     background-color: var(--hoverColor);
     color: var(--whiteColor);
   }
-  .navSection .header .navBar .closeNav {
+  .navSection .navBar .closeNav {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -95,10 +149,19 @@
     cursor: pointer;
     transition: 0.3s ease;
   }
-  .navSection .header .navBar .closeNav:hover {
+  .navSection .navBar .closeNav:hover {
     color: var(--hoverColor);
   }
-  .navSection .header .activeNav {
+  .navSection .activeNav {
     left: 0;
   }
+}
+.navSection .toggleNav {
+  font-size: 1.5rem;
+  color: var(--whiteColor);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.navSection .toggleNav:hover {
+  color: var(--primaryColor);
 }/*# sourceMappingURL=Navbar.css.map */

@@ -50,8 +50,9 @@ li {
 .btn {
   display: inline-block;
   background: var(--primaryColor);
-  padding: 0.3rem 1.5rem;
-  border-radius: 0.3rem;
+  color: var(--whiteColor);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
   font-size: 1rem;
   border: none;
   outline: none;
@@ -64,26 +65,25 @@ li {
 }
 
 .btn:hover {
-  /* background: var(--hoverColor); */
-  color: var(--whiteColor);
+  background: var(--hoverColor);
 }
 
 .section {
   padding: 4rem 0 2rem;
 }
 
-.secIntro {
+.sec-intro {
   max-width: 70%;
   text-align: center;
   margin: 0 auto 2rem;
 }
 
-.secIntro .secTitle {
+.sec-intro .sec-title {
   color: var(--blackColor);
   line-height: 1.2rem;
   padding-bottom: 0.5rem;
 }
-.secIntro p {
+.sec-intro p {
   color: var(--textColor);
   font-size: 0.6rem;
   font-weight: 500;

@@ -1,0 +1,96 @@
+.home {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url(../../assets/home.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    opacity: 0.9;
+    position: relative;
+
+    .sec-container {
+        .home-text {
+            text-align: center;
+
+            .title {
+                font-size: 3rem;
+                color: var(--whiteColor);
+                font-weight: 600;
+                margin-bottom: 1.5rem;
+                line-height: 2rem;
+            }
+
+            .sub-title {
+                font-size: 1.5rem;
+                color: var(--whiteColor);
+                font-weight: 300;
+                margin-bottom: 1rem;
+                line-height: 2rem;
+            }
+
+            .explore-btn {
+                display: inline-block;
+                padding: 0.5rem 1.5rem;
+                background-color: var(--primaryColor);
+                font-size: 1.2rem;
+                font-weight: 600;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--hoverColor);
+                }
+            }
+        }
+
+        .home-card {
+            position: absolute;
+            bottom: -30%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 60%;
+            border-radius: 1rem;
+            padding: 2rem;
+            gap: 1rem;
+            justify-content: center;
+            background-color: var(--whiteColor);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            .location-div,
+            .distance-div,
+            .price-div {
+                width: 100%;
+
+                label {
+                    font-size: .9rem;
+                    font-weight: 600;
+                    color: var(--primaryColor);
+                    margin-bottom: 0.5rem;
+                    display: block;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 0.1rem 1rem;
+                    background-color: var(--inputColor);
+                    border: 1px solid var(--primaryColor);
+                    border-radius: 0.5rem;
+                    outline: none;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: var(--primaryColor);
+
+                    &::placeholder {
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
