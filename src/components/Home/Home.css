@@ -12,29 +12,32 @@
   opacity: 0.9;
   position: relative;
 }
+.home .sec-container {
+  margin-top: -5rem;
+}
 .home .sec-container .home-text {
   text-align: center;
 }
 .home .sec-container .home-text .title {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--whiteColor);
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  line-height: 2rem;
-}
-.home .sec-container .home-text .sub-title {
-  font-size: 1.5rem;
-  color: var(--whiteColor);
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 1rem;
   line-height: 2rem;
 }
+.home .sec-container .home-text .sub-title {
+  font-size: 1rem;
+  color: var(--whiteColor);
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
 .home .sec-container .home-text .explore-btn {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1rem;
   background-color: var(--primaryColor);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -43,10 +46,10 @@
 }
 .home .sec-container .home-card {
   position: absolute;
-  bottom: -30%;
+  bottom: -20%;
   left: 50%;
   transform: translate(-50%);
-  width: 60%;
+  width: 80%;
   border-radius: 1rem;
   padding: 2rem;
   gap: 1rem;
@@ -64,7 +67,7 @@
 .home .sec-container .home-card .price-div label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--primaryColor);
+  color: var(--textColor);
   margin-bottom: 0.5rem;
   display: block;
 }
@@ -74,12 +77,12 @@
   width: 100%;
   padding: 0.1rem 1rem;
   background-color: var(--inputColor);
-  border: 1px solid var(--primaryColor);
+  border: none;
   border-radius: 0.5rem;
   outline: none;
   font-size: 1rem;
   font-weight: 300;
-  color: var(--primaryColor);
+  color: var(--white Color);
 }
 .home .sec-container .home-card .location-div input::-moz-placeholder, .home .sec-container .home-card .distance-div input::-moz-placeholder, .home .sec-container .home-card .price-div input::-moz-placeholder {
   opacity: 0.5;

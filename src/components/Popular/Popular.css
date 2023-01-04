@@ -1,1 +1,158 @@
-/*# sourceMappingURL=Popular.css.map */
+.popular {
+  margin-top: 10rem;
+}
+.popular .sec-container .sec-header {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.popular .sec-container .sec-header .text-div .sec-title {
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.popular .sec-container .sec-header .text-div p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--textColor);
+  text-align: center;
+}
+.popular .sec-container .sec-header .icons-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.popular .sec-container .sec-header .icons-div .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: rgb(223, 218, 218);
+  color: var(--primaryColor);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.popular .sec-container .sec-header .icons-div .icon:hover {
+  transform: translateY(-0.5rem);
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.popular .sec-container .main-content {
+  padding: 2rem 0;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.popular .sec-container .main-content .single-dest {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.1);
+}
+.popular .sec-container .main-content .single-dest .dest-image {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.popular .sec-container .main-content .single-dest .dest-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular .sec-container .main-content .single-dest .dest-image .overlay-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.popular .sec-container .main-content .single-dest .dest-image .overlay-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.popular .sec-container .main-content .single-dest .dest-image .overlay-info p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.popular .sec-container .main-content .single-dest .dest-image .overlay-info .icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  background-color: var(--primaryColor);
+  transition: all 0.3s ease-in-out;
+}
+.popular .sec-container .main-content .single-dest .dest-image .overlay-info .icon:hover {
+  background-color: var(--blackColor);
+}
+.popular .sec-container .main-content .single-dest .dest-footer {
+  padding: 1rem;
+  background-color: var(--whiteColor);
+}
+.popular .sec-container .main-content .single-dest .dest-footer .number {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blackColor);
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.popular .sec-container .main-content .single-dest .dest-footer .number:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -150%;
+  width: 100%;
+  height: 5px;
+  background-color: var(--primaryColor);
+  border-radius: 1rem;
+}
+.popular .sec-container .main-content .single-dest .dest-footer .dest-text {
+  justify-content: space-between;
+  align-items: center;
+}
+.popular .sec-container .main-content .single-dest .dest-footer .dest-text h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--blackColor);
+}
+.popular .sec-container .main-content .single-dest .dest-footer .dest-text .flex {
+  font-size: 1rem;
+  font-weight: 600;
+  align-items: flex-start;
+  transform: translateY(5px);
+}
+.popular .sec-container .main-content .single-dest .dest-footer .dest-text .flex .icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.popular .sec-container .main-content .single-dest:hover .overlay-info {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
+  color: var(--whiteColor);
+}/*# sourceMappingURL=Popular.css.map */

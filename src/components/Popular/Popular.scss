@@ -1,0 +1,201 @@
+.popular {
+    margin-top: 10rem;
+
+    .sec-container {
+        .sec-header {
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .text-div {
+                .sec-title {
+                    line-height: 1.5;
+                    padding-bottom: .5rem;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: .9rem;
+                    font-weight: 300;
+                    line-height: 1.5;
+                    color: var(--textColor);
+                    text-align: center;
+                }
+            }
+
+            .icons-div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+
+                .icon {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .5rem;
+                    width: 4rem;
+                    height: 2rem;
+                    border-radius: 2rem;
+                    background-color: rgb(223, 218, 218);
+                    color: var(--primaryColor);
+                    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        transform: translateY(-.5rem);
+                        background-color: var(--blackColor);
+                        color: var(--whiteColor);
+                        box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+                    }
+
+                }
+            }
+        }
+
+        .main-content {
+            padding: 2rem 0;
+            gap: 1rem;
+
+            margin: 0 auto;
+
+            .single-dest {
+                overflow: hidden;
+                border-radius: 1rem;
+                box-shadow: 0 2px 1rem rgba(0, 0, 0, .1);
+
+                .dest-image {
+                    width: 100%;
+                    height: 250px;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .overlay-info {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: rgba(0, 0, 0, .7);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        // opacity: 0;
+                        transition: all .3s ease-in-out;
+
+                        // &:hover {
+                        //     opacity: 1;
+                        //     color: var(--whiteColor);
+                        // }
+
+                        h3 {
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            margin-bottom: .5rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+
+                        .icon {
+                            position: absolute;
+                            right: 10px;
+                            bottom: 10px;
+                            padding: .5rem;
+                            font-size: 2.5rem;
+                            border-radius: 2rem;
+                            background-color: var(--primaryColor);
+                            transition: all .3s ease-in-out;
+
+                            &:hover {
+                                background-color: var(--blackColor);
+                            }
+                        }
+                    }
+                }
+
+                .dest-footer {
+                    padding: 1rem;
+                    background-color: var(--whiteColor);
+
+                    .number {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: var(--blackColor);
+                        position: relative;
+                        width: max-content;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 45%;
+                            right: -150%;
+                            width: 100%;
+                            height: 5px;
+                            background-color: var(--primaryColor);
+                            border-radius: 1rem;
+                        }
+                    }
+
+                    .dest-text {
+                        justify-content: space-between;
+                        align-items: center;
+
+
+                        h6 {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: var(--blackColor);
+
+                        }
+
+                        .flex {
+                            font-size: 1rem;
+                            font-weight: 600;
+                            align-items: flex-start;
+                            transform: translateY(5px);
+
+                            .icon {
+                                font-size: 1.5rem;
+                                color: var(--primaryColor);
+                            }
+
+
+                        }
+                    }
+
+                }
+
+                &:hover {
+                    .overlay-info {
+                        overflow: visible;
+                        padding: 1rem 1.5rem;
+                        height: 100%;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+}
