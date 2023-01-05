@@ -1,0 +1,152 @@
+.offer {
+    .sec-container {
+
+        .main-content {
+            gap: 1rem;
+
+            .single-offer {
+                border-radius: 1rem;
+                overflow: hidden;
+                padding: .5rem;
+                box-shadow: 1 2px 8px 2px rgba(178, 178, 178, 0.2);
+                transition: all .3s ease-in-out;
+                //background-color: rgb(235, 230, 230);
+
+                .icon {
+                    font-size: 20px;
+                    color: var(--textColor);
+                }
+
+                small {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: var(--textColor);
+                }
+
+                .dest-image {
+                    position: relative;
+                    height: 250px;
+                    width: 100%;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .discount {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: var(--primaryColor);
+                        color: var(--whiteColor);
+                        padding: .2rem .5rem;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        border-radius: 0 0 0 1rem;
+
+                        &:hover {
+                            background: var(--blackColor);
+
+                        }
+                    }
+                }
+
+                .offer-body {
+                    padding: 1rem 0;
+
+
+                    .price-div {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 1rem;
+
+                        .old-price {
+                            font-size: 1rem;
+                            font-weight: 300;
+                            color: var(--textColor);
+                            text-decoration: line-through;
+                            padding-right: .5rem;
+                        }
+
+                        .discount-price {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: var(--primaryColor);
+                        }
+
+                        .for-rent {
+                            font-size: 1rem;
+                            font-weight: 500;
+                            color: var(--primaryColor);
+                            padding: 5px 10px;
+                            background-color: var(--grayBg);
+                            border-radius: 2rem;
+                        }
+                    }
+
+                    .amenities {
+                        width: 100%;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+
+                        .amenity {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            color: var(--textColor);
+                            padding: .2rem .5rem;
+                            border-radius: 1rem;
+                            background-color: var(--grayBg);
+
+                        }
+                    }
+
+                    .location {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: var(--textColor);
+                    }
+
+                    .btn {
+                        margin-top: 1rem;
+                        width: 100%;
+
+                        .btn-view {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: .5rem;
+                            font-size: 1rem;
+                            font-weight: 500;
+                            color: var(--whiteColor);
+                            padding: .5rem 1rem;
+                            border-radius: 1rem;
+                            transition: all .3s ease-in-out;
+
+                            .icon {
+                                font-size: 2rem;
+                                color: var(--whiteColor);
+
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 1 2px 8px 2px rgba(178, 178, 178, 0.5);
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}

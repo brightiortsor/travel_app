@@ -55,7 +55,7 @@ const data = [
 
 const Popular = () => {
   return (
-    <section className="popular container">
+    <section className="popular container section">
       <div className="sec-container">
         <div className="sec-header flex">
           <div className="text-div">

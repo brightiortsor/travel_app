@@ -52,7 +52,7 @@ li {
   background: var(--primaryColor);
   color: var(--whiteColor);
   padding: 0.3rem 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   font-size: 1rem;
   border: none;
   outline: none;
@@ -85,8 +85,9 @@ li {
 }
 .sec-intro p {
   color: var(--textColor);
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 500;
+  padding-top: 0.5rem;
 }
 
 img,

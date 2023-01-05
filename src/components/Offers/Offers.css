@@ -1,1 +1,124 @@
-/*# sourceMappingURL=Offers.css.map */
+.offer .sec-container .main-content {
+  gap: 1rem;
+}
+.offer .sec-container .main-content .single-offer {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-shadow: 1 2px 8px 2px rgba(178, 178, 178, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.offer .sec-container .main-content .single-offer .icon {
+  font-size: 20px;
+  color: var(--textColor);
+}
+.offer .sec-container .main-content .single-offer small {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--textColor);
+}
+.offer .sec-container .main-content .single-offer .dest-image {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.offer .sec-container .main-content .single-offer .dest-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.offer .sec-container .main-content .single-offer .dest-image .discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 0.2rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 0 0 0 1rem;
+}
+.offer .sec-container .main-content .single-offer .dest-image .discount:hover {
+  background: var(--blackColor);
+}
+.offer .sec-container .main-content .single-offer .offer-body {
+  padding: 1rem 0;
+}
+.offer .sec-container .main-content .single-offer .offer-body .price-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.offer .sec-container .main-content .single-offer .offer-body .price-div .old-price {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--textColor);
+  text-decoration: line-through;
+  padding-right: 0.5rem;
+}
+.offer .sec-container .main-content .single-offer .offer-body .price-div .discount-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+.offer .sec-container .main-content .single-offer .offer-body .price-div .for-rent {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primaryColor);
+  padding: 5px 10px;
+  background-color: var(--grayBg);
+  border-radius: 2rem;
+}
+.offer .sec-container .main-content .single-offer .offer-body .amenities {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.offer .sec-container .main-content .single-offer .offer-body .amenities .amenity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--textColor);
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--grayBg);
+}
+.offer .sec-container .main-content .single-offer .offer-body .location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--textColor);
+}
+.offer .sec-container .main-content .single-offer .offer-body .btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+.offer .sec-container .main-content .single-offer .offer-body .btn .btn-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--whiteColor);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.offer .sec-container .main-content .single-offer .offer-body .btn .btn-view .icon {
+  font-size: 2rem;
+  color: var(--whiteColor);
+}
+.offer .sec-container .main-content .single-offer:hover {
+  box-shadow: 1 2px 8px 2px rgba(178, 178, 178, 0.5);
+  transform: translateY(-5px);
+}/*# sourceMappingURL=Offers.css.map */
