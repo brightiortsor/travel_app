@@ -1,1 +1,34 @@
-/*# sourceMappingURL=About.css.map */
+.about .sec-container .title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blackColor);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about .sec-container .main-content {
+  gap: 1rem;
+}
+.about .sec-container .main-content .single-item {
+  text-align: center;
+}
+.about .sec-container .main-content .single-item img {
+  width: 200px;
+  height: 100%;
+  padding: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  background-color: rgba(247, 144, 54, 0.3);
+}
+.about .sec-container .main-content .single-item h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blackColor);
+  margin-bottom: 0.5rem;
+}
+.about .sec-container .main-content .single-item p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--textColor);
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=About.css.map */
