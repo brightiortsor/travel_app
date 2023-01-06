@@ -3,7 +3,7 @@ import "./About.css";
 import Mountain from "../../assets/mountain1.svg";
 import Hikers from "../../assets/hiker.svg";
 import Customers from "../../assets/customers1.svg";
-import Video from "../../assets/gif.gif";
+import Img from "../../assets/gif.gif";
 
 const About = () => {
   return (
@@ -44,11 +44,10 @@ const About = () => {
           </div>
         </div>
 
-        <div className="card-div">
+        <div className="img-card container">
           <div className="card-content grid">
             <div className="card-text">
               <h2>Wonderful house experience in the middle of nature.</h2>
-
               <p>
                 The adventure subranking is based on the number of trips that
                 include the activity. The more trips that include the activity,
@@ -56,8 +55,8 @@ const About = () => {
               </p>
             </div>
 
-            <div className="card-video">
-              <img src={Video} alt="video" />
+            <div className="card-img">
+              <img src={Img} alt="lighting img" />
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Popular from "./components/Popular/Popular";
 import Offers from "./components/Offers/Offers";
 import About from "./components/About/About";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Popular />
       <Offers />
       <About />
+      <Blog />
     </div>
   );
 }

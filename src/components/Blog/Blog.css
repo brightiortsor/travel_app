@@ -1,1 +1,70 @@
-/*# sourceMappingURL=Blog.css.map */
+:root {
+  --primaryColor: hsl(26, 93%, 50%);
+  --hoverColor: hsl(26, 90%, 40%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 0%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDim: hsl(0, 0%, 93%);
+  --grayBg: hsl(0, 0%, 96%);
+  --grayText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.blog .sec-container .main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.blog .sec-container .main-content .single-post {
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.blog .sec-container .main-content .single-post .img-div {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px 2px rgba(223, 53, 53, 0.4);
+}
+.blog .sec-container .main-content .single-post .img-div:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+.blog .sec-container .main-content .single-post .img-div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  border-radius: 1rem;
+}
+.blog .sec-container .main-content .single-post .post-details h3 {
+  font-size: 1rem;
+  color: var(--blackColor);
+  margin-bottom: 0.5rem;
+}
+.blog .sec-container .main-content .single-post .post-details p {
+  font-size: 0.8rem;
+  color: var(--textColor);
+}
+.blog .sec-container .main-content .single-post .post-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -1.2rem;
+}
+.blog .sec-container .main-content .single-post .post-link a {
+  font-size: 0.8rem;
+  color: var(--primaryColor);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blog .sec-container .main-content .single-post .post-link a:hover {
+  color: var(--hoverColor);
+}
+.blog .sec-container .main-content .single-post .post-link .icon {
+  font-size: 1rem;
+  color: var(--primaryColor);
+  transition: all 0.3s ease-in-out;
+}
+.blog .sec-container .main-content .single-post .post-link .icon:hover {
+  color: var(--hoverColor);
+}/*# sourceMappingURL=Blog.css.map */
