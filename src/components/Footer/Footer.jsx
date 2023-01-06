@@ -63,6 +63,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p>&copy; 2022. All rights reserved.</p>
       </div>
     </div>
   );

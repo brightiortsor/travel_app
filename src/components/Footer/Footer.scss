@@ -5,6 +5,13 @@
     font-size: 12px;
 
     .sec-container {
+        p {
+            font-size: .8rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--textColor);
+        }
+
         .footer-content {
             display: flex;
             justify-content: space-between;

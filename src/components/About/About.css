@@ -20,6 +20,7 @@
 .about .sec-container .main-content .single-item img {
   width: 200px;
   height: 100%;
+  margin-top: 1.5rem;
   padding: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -33,7 +34,7 @@
   margin-bottom: 0.5rem;
 }
 .about .sec-container .main-content .single-item p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--textColor);
   margin-bottom: 0.5rem;

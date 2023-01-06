@@ -1,10 +1,9 @@
 .popular {
-  margin-top: 10rem;
+  margin-top: 12rem;
 }
 .popular .sec-container .sec-header {
   gap: 1rem;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .popular .sec-container .sec-header .text-div .sec-title {
