@@ -1,1 +1,103 @@
-/*# sourceMappingURL=Footer.css.map */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 2rem;
+  font-size: 12px;
+}
+.footer .sec-container .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .sec-container .footer-content .icons-div {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.footer .sec-container .footer-content .icons-div .logo-div .footer-logo {
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.footer .sec-container .footer-content .icons-div .logo-div .footer-logo .logo {
+  font-weight: 500;
+  color: var(--textColor);
+  align-items: center;
+  justify-content: center;
+}
+.footer .sec-container .footer-content .icons-div .logo-div .footer-logo .logo .icon {
+  font-size: 2rem;
+  margin-right: 0.2rem;
+  color: var(--primaryColor);
+}
+.footer .sec-container .footer-content .icons-div .socials {
+  gap: 0.5rem;
+}
+.footer .sec-container .footer-content .icons-div .socials .icon {
+  font-size: 1.5rem;
+}
+.footer .sec-container .footer-content .icons-div .socials .fb-icon {
+  background-color: blue;
+  color: var(--whiteColor);
+  border-radius: 2rem;
+  padding: 0.1rem;
+}
+.footer .sec-container .footer-content .icons-div .socials .insta-icon {
+  background-color: red;
+  color: var(--whiteColor);
+  border-radius: 2rem;
+  padding: 0.1rem;
+}
+.footer .sec-container .footer-content .icons-div .socials .twit-icon {
+  background-color: blue;
+  color: var(--whiteColor);
+  border-radius: 2rem;
+  padding: 0.1rem;
+}
+.footer .sec-container .footer-content .icons-div .socials .red-icon {
+  background-color: red;
+  color: var(--whiteColor);
+  border-radius: 2rem;
+  padding: 0.1rem;
+}
+.footer .sec-container .footer-content .footer-links {
+  display: flex;
+  flex: 3;
+  justify-content: space-evenly;
+  gap: 2rem;
+  color: var(--whiteColor);
+}
+.footer .sec-container .footer-content .footer-links .helpful-links {
+  gap: 2rem;
+}
+.footer .sec-container .footer-content .footer-links .helpful-links .link-title {
+  font-weight: 500;
+  padding-bottom: 1rem;
+  color: var(--whiteColor);
+  font-size: 1rem;
+}
+.footer .sec-container .footer-content .footer-links .helpful-links li {
+  padding: 0.5rem 0;
+}
+.footer .sec-container .footer-content .footer-links .helpful-links li a {
+  color: var(--textColor);
+}
+.footer .sec-container .footer-content .footer-links .helpful-links li a:hover {
+  color: var(--primaryColor);
+}
+.footer .sec-container .footer-content .footer-links .other-links {
+  gap: 1.5rem;
+}
+.footer .sec-container .footer-content .footer-links .other-links .link-title {
+  font-weight: 500;
+  padding-bottom: 1rem;
+  color: var(--whiteColor);
+  font-size: 1rem;
+}
+.footer .sec-container .footer-content .footer-links .other-links li {
+  padding: 0.5rem 0;
+}
+.footer .sec-container .footer-content .footer-links .other-links li a {
+  color: var(--textColor);
+}
+.footer .sec-container .footer-content .footer-links .other-links li a:hover {
+  color: var(--primaryColor);
+}/*# sourceMappingURL=Footer.css.map */

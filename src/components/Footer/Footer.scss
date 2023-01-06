@@ -1,0 +1,133 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 12px;
+
+    .sec-container {
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+
+            .icons-div {
+                display: flex;
+                flex-direction: column;
+                flex: 2;
+
+                .logo-div {
+                    .footer-logo {
+                        font-weight: 500;
+                        padding-bottom: 1rem;
+
+                        .logo {
+                            font-weight: 500;
+                            color: var(--textColor);
+                            align-items: center;
+                            justify-content: center;
+
+                            .icon {
+                                font-size: 2rem;
+                                margin-right: 0.2rem;
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+
+                .socials {
+                    gap: .5rem;
+
+                    .icon {
+                        font-size: 1.5rem;
+                    }
+
+                    .fb-icon {
+                        background-color: blue;
+                        color: var(--whiteColor);
+                        border-radius: 2rem;
+                        padding: 0.1rem;
+                    }
+
+                    .insta-icon {
+                        background-color: red;
+                        color: var(--whiteColor);
+                        border-radius: 2rem;
+                        padding: 0.1rem;
+                    }
+
+                    .twit-icon {
+                        background-color: blue;
+                        color: var(--whiteColor);
+                        border-radius: 2rem;
+                        padding: 0.1rem;
+                    }
+
+                    .red-icon {
+                        background-color: red;
+                        color: var(--whiteColor);
+                        border-radius: 2rem;
+                        padding: 0.1rem;
+                    }
+                }
+            }
+
+            .footer-links {
+                display: flex;
+                flex: 3;
+                justify-content: space-evenly;
+                gap: 2rem;
+                color: var(--whiteColor);
+
+                .helpful-links {
+                    gap: 2rem;
+
+                    .link-title {
+                        font-weight: 500;
+                        padding-bottom: 1rem;
+                        color: var(--whiteColor);
+                        font-size: 1rem;
+                    }
+
+                    li {
+                        padding: .5rem 0;
+
+                        a {
+                            color: var(--textColor);
+
+                            &:hover {
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+
+                }
+
+
+
+                .other-links {
+                    gap: 1.5rem;
+
+                    .link-title {
+                        font-weight: 500;
+                        padding-bottom: 1rem;
+                        color: var(--whiteColor);
+                        font-size: 1rem;
+                    }
+
+                    li {
+                        padding: .5rem 0;
+
+                        a {
+                            color: var(--textColor);
+
+                            &:hover {
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
