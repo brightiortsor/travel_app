@@ -7,7 +7,7 @@ import Img from "../../assets/gif.gif";
 
 const About = () => {
   return (
-    <section className="about section">
+    <section id="about" className="about section">
       <div className="sec-container">
         <div className="title">
           <h2>Why Hiking?</h2>

@@ -65,4 +65,10 @@
 }
 .blog .sec-container .main-content .single-post .post-link .icon:hover {
   color: var(--hoverColor);
+}
+
+@media screen and (min-width: 884px) {
+  .blog .sec-container .main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Blog.css.map */

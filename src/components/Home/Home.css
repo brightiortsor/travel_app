@@ -46,7 +46,7 @@
 }
 .home .sec-container .home-card {
   position: absolute;
-  bottom: -20%;
+  bottom: -25%;
   left: 50%;
   transform: translate(-50%);
   width: 80%;
@@ -94,4 +94,54 @@
 .home .sec-container .home-card .distance-div input::placeholder,
 .home .sec-container .home-card .price-div input::placeholder {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 680px) {
+  .home .sec-container .home-text .title {
+    font-size: 2.5rem;
+  }
+  .home .sec-container .home-text .sub-title {
+    font-size: 1.2rem;
+    margin: 2rem 0 2.5rem;
+  }
+  .home .sec-container .home-card {
+    width: 80%;
+    bottom: -100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .sec-container .home-card .btn {
+    transform: translateY(15px);
+    width: 80%;
+  }
+  .home .sec-container .home-card .location-div,
+.home .sec-container .home-card .distance-div,
+.home .sec-container .home-card .price-div {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 820px) {
+  .home .sec-container .home-text .title {
+    font-size: 3rem;
+    margin: 2rem 0 2.5rem;
+  }
+  .home .sec-container .home-text .sub-title {
+    font-size: 1.3rem;
+    margin: 2rem 0 2.5rem;
+  }
+  .home .sec-container .home-card {
+    width: 80%;
+    bottom: -60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .home .sec-container .home-card .btn {
+    transform: translateY(15px);
+    width: 80%;
+  }
+  .home .sec-container .home-card .location-div,
+.home .sec-container .home-card .distance-div,
+.home .sec-container .home-card .price-div {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Home.css.map */

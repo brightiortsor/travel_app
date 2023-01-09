@@ -96,3 +96,30 @@
         }
     }
 }
+
+@media screen and (min-width: 720px) {
+    .about {
+        .sec-container {
+            .img-card {
+                .card-content {
+                    gap: 2rem;
+                    padding: 2rem 1rem;
+
+                    .card-text {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            opacity: .7;
+                        }
+                    }
+                }
+
+                .card-content {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                }
+            }
+        }
+    }
+}

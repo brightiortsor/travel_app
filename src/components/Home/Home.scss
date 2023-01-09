@@ -51,7 +51,7 @@
 
         .home-card {
             position: absolute;
-            bottom: -20%;
+            bottom: -25%;
             left: 50%;
             transform: translate(-50%);
             width: 80%;
@@ -93,6 +93,82 @@
             }
 
 
+        }
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .home {
+        .sec-container {
+            .home-text {
+                .title {
+                    font-size: 2.5rem;
+                }
+
+                .sub-title {
+                    font-size: 1.2rem;
+                    margin: 2rem 0 2.5rem;
+                }
+            }
+
+            .home-card {
+                width: 80%;
+
+                bottom: -100px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .btn {
+                    transform: translateY(15px);
+                    width: 80%;
+                }
+
+
+                .location-div,
+                .distance-div,
+                .price-div {
+                    width: 80%;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .home {
+        .sec-container {
+            .home-text {
+                .title {
+                    font-size: 3rem;
+                    margin: 2rem 0 2.5rem;
+                }
+
+                .sub-title {
+                    font-size: 1.3rem;
+                    margin: 2rem 0 2.5rem;
+                }
+            }
+
+            .home-card {
+                width: 80%;
+
+                bottom: -60px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                .btn {
+                    transform: translateY(15px);
+                    width: 80%;
+                }
+
+                .location-div,
+                .distance-div,
+                .price-div {
+                    width: 100%;
+                }
+            }
         }
     }
 }

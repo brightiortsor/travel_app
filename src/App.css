@@ -101,11 +101,42 @@ input {
   font-size: 100%;
 }
 
-/* @media screen and (min-width: 530px) {
-  .main-content {
-    display: grid;
+@media screen and (min-width: 556px) {
+  .main-content, .single-post {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
   }
-} */
+}
+
+
+@media screen and (min-width: 884px) {
+  .main-content {
+   
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media screen and (min-width: 1240px) {
+  .container {
+   width: 75%;
+   margin: 0 auto;
+  }
+}
+
+/* Page Design */
+
+::selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--grayBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  cursor: pointer;
+}

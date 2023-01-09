@@ -80,4 +80,20 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 720px) {
+  .about .sec-container .img-card .card-content {
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  .about .sec-container .img-card .card-content .card-text h2 {
+    font-size: 1.5rem;
+  }
+  .about .sec-container .img-card .card-content .card-text p {
+    opacity: 0.7;
+  }
+  .about .sec-container .img-card .card-content {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }/*# sourceMappingURL=About.css.map */

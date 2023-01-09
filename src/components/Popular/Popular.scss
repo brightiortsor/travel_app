@@ -58,6 +58,7 @@
 
         .main-content {
             padding: 2rem 0;
+            //margin: 0 auto;
             gap: 1rem;
 
 
@@ -198,4 +199,42 @@
 
     }
 
+}
+
+@media screen and (min-width: 556px) {
+    .popular {
+        .sec-container {
+            .sec-header {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .text-div {
+                    text-align: start;
+                    max-width: 70%;
+                }
+
+                .icons-div {
+                    justify-content: end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .popular {
+        margin-top: 8rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Popular.css";
 import { BsArrowLeftShort, BsArrowRightShort, BsDot } from "react-icons/bs";
 import Img1 from "../../assets/img1.avif";
@@ -7,6 +7,8 @@ import Img3 from "../../assets/img3.avif";
 import Img4 from "../../assets/img4.avif";
 import Img5 from "../../assets/img5.avif";
 import Img6 from "../../assets/img6.avif";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const data = [
   {
@@ -54,11 +56,19 @@ const data = [
 ];
 
 const Popular = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <section className="popular container section">
+    <section id="popular" className="popular container section">
       <div className="sec-container">
         <div className="sec-header flex">
-          <div className="text-div">
+          <div
+            className="text-div"
+            data-aos="fade-right"
+            data-aos-duration="2500"
+          >
             <h2 className="sec-title">Popular Destination</h2>
             <p>
               From historical cities to beaches, come let's travel the world
@@ -66,15 +76,25 @@ const Popular = () => {
             </p>
           </div>
 
-          <div className="icons-div">
+          <div
+            className="icons-div"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <BsArrowLeftShort className="icon" />
             <BsArrowRightShort className="icon" />
           </div>
         </div>
-        {data.map(({ id, image, title, subtitle, city }) => {
-          return (
-            <div className="main-content grid">
-              <div key={id} className="single-dest">
+
+        <div className="main-content grid">
+          {data.map(({ id, image, title, subtitle, city }) => {
+            return (
+              <div
+                key={id}
+                className="single-dest"
+                data-aos="fade-up"
+                data-aos-duration="2500"
+              >
                 <div className="dest-image">
                   <img src={image} alt="destination" />
 
@@ -98,9 +118,9 @@ const Popular = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   );

@@ -86,7 +86,7 @@ const offers = [
 
 const Offers = () => {
   return (
-    <section className="offer container section">
+    <section id="offers" className="offer container section">
       <div className="sec-container">
         <div className="sec-intro">
           <h2 className="sec-title">Special Offers</h2>
@@ -95,20 +95,20 @@ const Offers = () => {
           </p>
         </div>
 
-        {offers.map(
-          ({
-            id,
-            img,
-            discount,
-            oldPrice,
-            discountPrice,
-            beds,
-            bath,
-            destination,
-            location,
-          }) => {
-            return (
-              <div className="main-content grid">
+        <div className="main-content grid">
+          {offers.map(
+            ({
+              id,
+              img,
+              discount,
+              oldPrice,
+              discountPrice,
+              beds,
+              bath,
+              destination,
+              location,
+            }) => {
+              return (
                 <div key={id} className="single-offer">
                   <div className="dest-image">
                     <img src={img} alt="destination" />
@@ -160,10 +160,10 @@ const Offers = () => {
                     </button>
                   </div>
                 </div>
-              </div>
-            );
-          }
-        )}
+              );
+            }
+          )}
+        </div>
       </div>
     </section>
   );
