@@ -101,11 +101,11 @@ input {
   font-size: 100%;
 }
 
-@media screen and (min-width: 530px) {
+/* @media screen and (min-width: 530px) {
   .main-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
   }
-}
+} */

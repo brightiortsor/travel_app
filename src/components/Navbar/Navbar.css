@@ -156,6 +156,12 @@
     left: 0;
   }
 }
+@media screen and (min-width: 769px) {
+  .navSection .closeNav,
+.navSection .toggleNav {
+    display: none;
+  }
+}
 .navSection .toggleNav {
   font-size: 1.5rem;
   color: var(--textColor);
