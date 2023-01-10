@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Offers.css";
 import {
   MdAirportShuttle,
@@ -14,6 +14,8 @@ import Img3 from "../../assets/3.avif";
 import Img4 from "../../assets/4.avif";
 import Img5 from "../../assets/5.avif";
 import Img6 from "../../assets/6.avif";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const offers = [
   {
@@ -85,10 +87,13 @@ const offers = [
 ];
 
 const Offers = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section id="offers" className="offer container section">
       <div className="sec-container">
-        <div className="sec-intro">
+        <div className="sec-intro" data-aos="fade-up" data-aos-duration="2000">
           <h2 className="sec-title">Special Offers</h2>
           <p>
             From historic sites to modern art, there's something for everyone!
@@ -109,7 +114,14 @@ const Offers = () => {
               location,
             }) => {
               return (
-                <div key={id} className="single-offer">
+                <div
+                  key={id}
+                  className="single-offer"
+                  data-aos="fade-up"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="3500"
+                >
                   <div className="dest-image">
                     <img src={img} alt="destination" />
                     <span className="discount">{discount}</span>

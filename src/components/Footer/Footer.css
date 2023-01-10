@@ -39,30 +39,10 @@
 }
 .footer .sec-container .footer-content .icons-div .socials .icon {
   font-size: 1.5rem;
+  color: var(--primaryColor);
 }
-.footer .sec-container .footer-content .icons-div .socials .fb-icon {
-  background-color: blue;
-  color: var(--whiteColor);
-  border-radius: 2rem;
-  padding: 0.1rem;
-}
-.footer .sec-container .footer-content .icons-div .socials .insta-icon {
-  background-color: red;
-  color: var(--whiteColor);
-  border-radius: 2rem;
-  padding: 0.1rem;
-}
-.footer .sec-container .footer-content .icons-div .socials .twit-icon {
-  background-color: blue;
-  color: var(--whiteColor);
-  border-radius: 2rem;
-  padding: 0.1rem;
-}
-.footer .sec-container .footer-content .icons-div .socials .red-icon {
-  background-color: red;
-  color: var(--whiteColor);
-  border-radius: 2rem;
-  padding: 0.1rem;
+.footer .sec-container .footer-content .icons-div .socials .icon:hover {
+  color: var(--textColor);
 }
 .footer .sec-container .footer-content .footer-links {
   display: flex;

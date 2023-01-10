@@ -46,35 +46,13 @@
 
                     .icon {
                         font-size: 1.5rem;
+                        color: var(--primaryColor);
+
+                        &:hover {
+                            color: var(--textColor);
+                        }
                     }
 
-                    .fb-icon {
-                        background-color: blue;
-                        color: var(--whiteColor);
-                        border-radius: 2rem;
-                        padding: 0.1rem;
-                    }
-
-                    .insta-icon {
-                        background-color: red;
-                        color: var(--whiteColor);
-                        border-radius: 2rem;
-                        padding: 0.1rem;
-                    }
-
-                    .twit-icon {
-                        background-color: blue;
-                        color: var(--whiteColor);
-                        border-radius: 2rem;
-                        padding: 0.1rem;
-                    }
-
-                    .red-icon {
-                        background-color: red;
-                        color: var(--whiteColor);
-                        border-radius: 2rem;
-                        padding: 0.1rem;
-                    }
                 }
             }
 

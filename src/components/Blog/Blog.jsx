@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Blog.css";
 import { BsArrowRightShort } from "react-icons/bs";
 import Blog1 from "../../assets/blog1.jpg";
 import Blog2 from "../../assets/blog2.jpg";
 import Blog3 from "../../assets/blog3.jpg";
 import Blog4 from "../../assets/blog4.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const blogs = [
   {
@@ -38,33 +40,54 @@ const blogs = [
 ];
 
 const Blog = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section id="blog" className="blog container section">
       <div className="sec-container">
         <div className="sec-intro">
           <div className="sec-title">
-            <h2>Our Blog Spots</h2>
-            <p>An insight to the incredible experience in the world!</p>
+            <h2 data-aos="fade-up" data-aos-duration="2000">
+              Our Blog Spots
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="2500">
+              An insight to the incredible experience in the world!
+            </p>
           </div>
         </div>
 
         <div className="main-content grid">
           {/* Map the array of blogs and render them here using map function */}
+
           {blogs.map(({ id, blogImg, title, desc, link }) => {
             return (
-              <div key={id} className="single-post grid">
+              <div
+                key={id}
+                className="single-post grid"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <div className="img-div">
                   <img src={blogImg} alt={title} />
                 </div>
 
                 <div className="post-details">
-                  <h3>{title}</h3>
-                  <p>{desc}</p>
-                </div>
-
-                <div className="post-link flex">
-                  <a href={link}>Read More</a>
-                  <BsArrowRightShort className="icon" />
+                  <h3 data-aos="fade-up" data-aos-duration="3000">
+                    {title}
+                  </h3>
+                  <p data-aos="fade-up" data-aos-duration="4000">
+                    {desc}
+                  </p>
+                  <div
+                    className="post-link flex"
+                    data-aos="fade-up"
+                    data-aos-duration="4500"
+                  >
+                    <a href={link}>Read More</a>
+                    <BsArrowRightShort className="icon" />
+                  </div>
                 </div>
               </div>
             );

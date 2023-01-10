@@ -45,9 +45,8 @@
 }
 .blog .sec-container .main-content .single-post .post-link {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin-top: -1.2rem;
+  margin-top: 0.2rem;
 }
 .blog .sec-container .main-content .single-post .post-link a {
   font-size: 0.8rem;

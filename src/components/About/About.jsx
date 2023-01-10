@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import Mountain from "../../assets/mountain1.svg";
 import Hikers from "../../assets/hiker.svg";
 import Customers from "../../assets/customers1.svg";
 import Img from "../../assets/gif.gif";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section id="about" className="about section">
       <div className="sec-container">
-        <div className="title">
+        <div className="title" data-aos="fade-up" data-aos-duration="2000">
           <h2>Why Hiking?</h2>
         </div>
         <div className="main-content container grid">
-          <div className="single-item">
+          <div
+            className="single-item"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <img src={Mountain} alt="mount fiji" />
             <h3>100+ Mountains</h3>
             <p>
@@ -23,7 +32,11 @@ const About = () => {
             </p>
           </div>
 
-          <div className="single-item">
+          <div
+            className="single-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
             <img src={Hikers} alt="hikers on mountain top" />
             <h3>5000+ Hikings</h3>
             <p>
@@ -33,7 +46,11 @@ const About = () => {
             </p>
           </div>
 
-          <div className="single-item">
+          <div
+            className="single-item"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <img src={Customers} alt="satisfied customers" />
             <h3>2000+ Tourists</h3>
             <p>
@@ -46,7 +63,11 @@ const About = () => {
 
         <div className="img-card container">
           <div className="card-content grid">
-            <div className="card-text">
+            <div
+              className="card-text"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h2>Wonderful house experience in the middle of nature.</h2>
               <p>
                 The adventure subranking is based on the number of trips that
@@ -55,7 +76,11 @@ const About = () => {
               </p>
             </div>
 
-            <div className="card-img">
+            <div
+              className="card-img"
+              data-aos="fade-left"
+              data-aos-duration="2500"
+            >
               <img src={Img} alt="lighting img" />
             </div>
           </div>
